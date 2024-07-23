@@ -1,0 +1,24 @@
+[{
+    "course":"React -The Complete Guide (incl Hooks, React Router, Redux)",
+    "organization":"Udemy",
+    "date":"Issued on April 2020",
+    "credentials":"https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+},
+{
+    "course":"Vue - The Complete Guide (incl. Router & Composition API)",
+    "organization":"Udemy",
+    "date":"Issued on July 2024",
+    "credentials": "https://www.udemy.com/course/vuejs-2-the-complete-guide"
+},
+{
+    "course":"React Testing Library with Jest / Vitest",
+    "organization":"Udemy",
+    "date":"Issued on July 2024",
+    "credentials":"https://www.udemy.com/course/react-testing-library/"
+},
+{
+    "course":"Complete React Native Bootcamp (with Hooks)",
+    "organization":"Udemy",
+    "date":"Issued on June 2024",
+    "credentials":"https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks"
+}]

@@ -1,0 +1,294 @@
+.experience-section-head{
+        margin-left:2rem;
+        padding-top:2rem;
+        padding-bottom:4rem;
+        border-bottom:1px solid var(--border-bottom-color);
+        --inital-delay:0s;
+        --vertical-line1:250ms;
+        --vertical-line2:250ms;
+        --horizontal-line:500ms;
+        --circle-line1:100ms;
+        --opacity-line:10ms;
+
+        --veritical-line1-associate-delay:var(--inital-delay);
+        --circle-line1-associate-delay:var( --vertical-line1);
+        --horizontal-line1-associate-delay:calc(var(--circle-line1-associate-delay) + var(--circle-line1));
+        --opacity-line1-associate-delay:calc(var(--horizontal-line1-associate-delay) + var(--horizontal-line));
+        --vertical-line2-associate-delay:calc(var(--opacity-line1-associate-delay) + var(--opacity-line));
+
+        --veritical-line1-pa-delay:calc( var(--vertical-line2-associate-delay) + var(--vertical-line2));
+        --circle-line1-pa-delay:calc(var( --veritical-line1-pa-delay) + var(--vertical-line1));
+        --horizontal-line1-pa-delay:calc(var(--circle-line1-pa-delay) + var(--circle-line1));
+        --opacity-line1-pa-delay:calc(var(--horizontal-line1-pa-delay) + var(--horizontal-line));
+        --vertical-line2-pa-delay:calc(var(--opacity-line1-pa-delay) + var(--opacity-line));
+
+        --veritical-line1-pat-delay:calc( var(--vertical-line2-pa-delay)  + var(--vertical-line2));
+        --circle-line1-pat-delay:calc(var( --veritical-line1-pat-delay) + var(--vertical-line1));
+        --horizontal-line1-pat-delay:calc(var(--circle-line1-pat-delay) + var(--circle-line1));
+        --opacity-line1-pat-delay:calc(var(--horizontal-line1-pat-delay) + var(--horizontal-line));
+        --vertical-line2-pat-delay:calc(var(--opacity-line1-pat-delay) + var(--opacity-line));
+        
+        --line-width:8px;
+        --background-circle-height:20px;
+        --background-circle-width:var(--background-circle-height);
+        --box-top-value:30px;
+        --horizontal-line-width:100px;
+        --horizontal-line-height:var(--line-width);
+        --horizontal-line-top-value:36px;
+        --color-point-height:14px;
+        --color-point-width:14px;
+    
+}
+    .d_grid_exp{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+    .exp-card{
+        padding: 15px;
+        width:fit-content;
+        background-color:black;
+        font-weight:600;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    .magic-colors{
+        padding:10px;
+        border-radius: 10px;
+    }
+@media screen and (max-width:768px) {
+    .exp-card{
+    padding: 10px;
+}
+.experience-section .exp-card h1{
+    font-size: 16px !important;
+}
+.experience-section .exp-card p{
+    font-size: 12px !important;
+}
+}
+
+.pause-animation-experience{
+    animation: none !important;
+}
+
+
+    .location{
+        padding:5px;
+        color:rgb(255, 1, 79);
+        font-size:12px;
+        font-weight:600;
+        border:1px solid var(--pink-color);
+        border-radius:4px;
+    }
+    
+    .exp-card-joiner{
+        padding:0px 15px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .exp-card-joiner:nth-child(2n+1){
+        border-right:var(--line-width) solid black;
+    }
+    .exp-card-joiner:nth-child(2n+1):before{
+        content:"";
+        display:block;
+        height:var(--background-circle-height);
+        width:var(--background-circle-width);
+        border-radius: 50%;
+        background-color:black;
+        position: absolute ;
+        right:-14px;
+        top:var(--box-top-value);
+        z-index: 10;
+       
+    }
+    .exp-card-joiner:nth-child(2n+1):after{
+        content:"";
+        display:block;
+        height:var(--horizontal-line-height);
+        width:var(--horizontal-line-width);
+        background-color:black;
+        position: absolute ;
+        right:-10px;
+        top:var(--horizontal-line-top-value); 
+        z-index: 0;
+        opacity:0.8
+    }
+ 
+    .color-point{
+        display:block;
+        height: var(--color-point-height);
+        width:var(--color-point-width);
+        border-radius: 50%;
+        background-color:var(--background-body);
+        position: absolute ;
+        right:-13px;
+        top:var(--box-top-value);
+        z-index: 12;
+        translate: -2px 3px;
+        transition: background-color 500ms ease-in;
+    }
+  
+    .exp-card-joiner:hover .color-point{
+        background-color:rgb(255, 1, 79);;
+    }
+    .opacity-less{
+        opacity:0.3;
+    }
+    .exp-card-joiner:hover .opacity-less{
+        opacity: 1;
+    }
+
+    /* ANIMATION LOGICS ......................*/
+
+    .vertical-line1{
+        position: absolute;
+        width:var(--line-width);
+        top:0px;
+        height:0px;
+        background-color: var(--pink-color);
+        right:-8px;
+    }
+    .circle-line{
+        display:block;
+        height:0px;
+        width:var(--color-point-width);
+        border-radius: 50%;
+        background-color:var(--pink-color);
+        position: absolute ;
+        right:-13px;
+        top:var(--box-top-value);
+        z-index: 12;
+        translate: -2px 3px;  
+    }
+    .horizonal-line{
+        content:"";
+        display:block;
+        height:var(--horizontal-line-height);
+        width:0px;
+        background-color:var(--pink-color);
+        position: absolute ;
+        right:-10px;
+        top:var(--horizontal-line-top-value);   
+        z-index: 1;
+    }
+ 
+    .vertical-line2{
+        position: absolute;
+        width:var(--line-width);
+        top:calc(var(--horizontal-line-top-value) + var(--color-point-height)) ;
+        height:0px;
+        background-color: var(--pink-color);
+        right:-8px;
+    }
+   
+
+    
+    /* ANIMATE PAR^TICULAR CONTAINERS ..................*/
+
+    /* 1st Container................. */
+
+    .vertical-line1.associate{
+        animation: vertical-line1 var(--vertical-line1) ease-in var( --veritical-line1-associate-delay) 1 forwards;
+    }
+    .circle-line.associate{
+        animation: circle-line1 var(--circle-line1) ease-in var(--circle-line1-associate-delay) 1 forwards;
+    }
+    .horizonal-line.associate{
+        animation: horizonal-line1 var(--horizontal-line) ease-in var(--horizontal-line1-associate-delay) 1 forwards;
+    }
+    .opacity-less.associate{
+        animation: experience-card-opacity var(--opacity-line) ease-in var(--opacity-line1-associate-delay) 1 forwards;
+    }
+    .vertical-line2.associate{
+        animation: vertical-line2 var(--vertical-line2) ease-in var(--vertical-line2-associate-delay) 1 forwards;
+    }
+
+/*..................*/
+    .odd-cards{
+        transform:rotateY(180deg);
+        transform-origin: right;
+        translate:-7.4px 0px;
+        z-index: 1;
+    }
+
+    @media screen and (max-width:768px){
+        .odd-cards{
+        /* translate:-8px 0px; */
+        }
+    }
+    .odd-cards .exp-card{
+        transform:rotateY(180deg);
+    }
+  
+    /* 2nd Container................. */
+
+    .vertical-line1.pa{
+        animation: vertical-line1 var(--vertical-line1) ease var(--veritical-line1-pa-delay) 1 forwards;
+    }
+    
+    .circle-line.pa{
+        animation: circle-line1 var(--circle-line1) ease-in var(--circle-line1-pa-delay) 1 forwards;
+    }
+  
+
+    .horizonal-line.pa{
+        animation: horizonal-line1 var(--horizontal-line) ease-in var(--horizontal-line1-pa-delay) 1 forwards;
+    }
+   
+    .opacity-less.pa{
+        animation: experience-card-opacity var(--opacity-line) ease-in var(--opacity-line1-pa-delay) 1 forwards;
+    }
+    
+    .vertical-line2.pa{
+        animation: vertical-line2 var(--vertical-line2) ease-in var(--vertical-line2-pa-delay) 1 forwards;
+    }
+
+    /* 3rd container .................   */
+    .vertical-line1.pat{
+        animation: vertical-line1 var(--vertical-line1) ease var(--veritical-line1-pat-delay) 1 forwards;
+    }
+    .circle-line.pat{
+        animation: circle-line1 var(--circle-line1) ease-in var(--circle-line1-pat-delay) 1 forwards;
+        background-color: var(--blue-color);
+    }
+    .horizonal-line.pat{
+        animation: horizonal-line1 var(--horizontal-line) ease-in var(--horizontal-line1-pat-delay) 1 forwards;
+    }
+    .opacity-less.pat{
+        animation: experience-card-opacity var(--opacity-line) ease-in var(--opacity-line1-pat-delay) 1 forwards;
+    }
+    .vertical-line2.pat{
+        animation: vertical-line2 var(--vertical-line2) ease-in var(--vertical-line2-pat-delay) 1 forwards;
+    }
+
+
+
+
+    @keyframes vertical-line1  {
+        100%{
+            height:var(--box-top-value)
+        }
+    }
+    @keyframes circle-line1  {
+        100%{
+            height:var(--color-point-height)
+        }
+    }
+    @keyframes horizonal-line1  {
+        100%{
+            width:var(--horizontal-line-width)
+        }
+    }
+    @keyframes experience-card-opacity {
+        100%{
+            opacity:1;
+            box-shadow: var(--blue-color) 0px 22px 70px 4px;
+        }
+    }
+    @keyframes vertical-line2  {
+        100%{
+            height:calc(100% - var(--box-top-value) - var(--color-point-height));
+        }
+    }
