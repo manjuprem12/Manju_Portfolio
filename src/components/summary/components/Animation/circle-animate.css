@@ -1,0 +1,92 @@
+
+.circle-percent-value{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-percent-value span{
+    position: absolute;
+}
+.animate-circle{
+    stroke-dashoffset: 360;
+    stroke:linear-gradient(to right, #2563eb, #ec4899, #ef4444) !important;
+}
+
+/* 360-empty 0-full  */
+.circle-percent-value span{
+    opacity:0;
+}
+
+/* ..............Antimations logics ...............*/
+
+.creativity{
+    animation:creativity var(--circle-time) ease-in var(--creativity-delay) 1 forwards;
+}
+
+@keyframes creativity {
+    100%{
+       stroke-dashoffset: var(--creativity-percent);   
+    }   
+   }
+.creativity_word{
+    animation:opacity_animate var(--percentage-time) ease-in var(--creativity-word-delay) forwards;
+}
+
+/*...........................*/
+
+
+
+
+.communications{
+    animation:communications var(--circle-time) ease-in var(--communications-delay) forwards;
+}
+
+@keyframes communications {
+    100%{
+       stroke-dashoffset: var(--communications-percent);   
+    }   
+   }
+.communications_word{
+    animation:opacity_animate var(--percentage-time) ease-in var(--communications-word-delay) forwards;
+}
+
+/*----------------------------------*/
+
+.problem_solving{
+    animation:problem_solving var(--circle-time) ease-in var(--problem-solving-delay) forwards;
+}
+
+@keyframes problem_solving {
+    100%{
+        stroke-dashoffset: var(--problem_solving-percent)
+    }   
+}
+.problem_solving_word{
+    animation:opacity_animate var(--percentage-time) ease-in var(--problem-solving-word-delay) forwards;
+}
+
+/*-------------------------------*/
+
+.team_work{
+    animation:team_work var(--circle-time) ease-in var(--team-work-delay) forwards;
+}
+
+@keyframes team_work {
+    100%{
+       stroke-dashoffset: var(--team_work-percent);   
+    }   
+   }
+
+   .team_work_word{
+    animation:opacity_animate var(--percentage-time) ease-in var(--team-work-word-delay) forwards;
+}
+
+/*--------------------------------*/
+
+
+@keyframes opacity_animate {
+    100%{
+        opacity:1;
+    }   
+}     

@@ -1,0 +1,83 @@
+.header{
+    background: radial-gradient(54.97% 272.54% at 27.36% -134.72%,rgba(108,148,255,.92) 0,rgba(0,0,0,.92) 100%);
+    opacity:0;
+    z-index: 100;
+    transition: opacity 1s;
+}
+.header-opacity{
+    opacity:1
+}
+.my-name{
+    letter-spacing: 2px;
+    /* color:rgb(152, 3, 197); */
+}
+
+.hamburger{
+    z-index: 10;
+}
+.mobile-menu{
+    height:100vh
+}
+.social-icons-head{
+    top:35%;
+}
+.logo{
+    cursor: pointer;
+}
+.arrow-bar{
+    width:fit-content;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:0;
+}
+.arrow-bar button{
+    outline:none;
+    background-color: transparent;
+    border: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+.arrow-bar button svg{
+transition: rotate 0.5s;
+}
+.rotate-button{
+    rotate: 180deg;
+}
+.social-icons li:not(:nth-child(1)){
+    width:130px;
+    translate:-80px 0px;
+    transition: translate 0.3s;
+    z-index: 10;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Linkedin{
+    background-color:  #0077b5;
+}
+.Github{
+    background-color: #333333;
+}
+.Email{
+    background-color: #6fc2b0;
+}
+.Resume{
+    background-color: #565f69;
+}
+
+.social-icons li:not(:nth-child(1)):hover{
+    translate:0px 0px;
+}
+
+.laptop-menu li,.mobile-menu li{
+    transition: scale 0.1s;
+    font-weight:800;
+}
+.laptop-menu li:active,.mobile-menu li:hover
+{
+    transform:scaleY(1.4);
+}
+.laptop-menu li:hover a,.mobile-menu li:hover a
+{
+    color:white !important;
+}
