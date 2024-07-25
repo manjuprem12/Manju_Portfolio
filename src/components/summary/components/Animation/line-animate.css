@@ -1,0 +1,69 @@
+.percentage-container{
+    height:6px;
+    width:100%;
+    background-color:black;
+    position: relative;
+    overflow:hidden;
+    border-radius:10px;
+}
+.level-line{
+    height:6px;
+    border-radius:10px;
+    background:linear-gradient(to right, #2563eb, #ec4899, #ef4444);
+    position:absolute;
+    width:0%;
+}
+.line-animate-container{
+    padding:1rem;
+}
+
+.level-line.html{
+    animation:html_animate var(--line-time) ease-in var(--html-delay) 1 forwards;
+}
+@keyframes html_animate{
+  100% {
+        width:var(--html-percent)
+    }
+}
+
+.level-line.css{
+    animation:css_animate var(--line-time) ease-in var(--css-delay) 1 forwards;
+}
+@keyframes css_animate{
+  100% {
+        width:var(--css-percent)
+    }
+}
+
+.level-line.javascript{
+    animation:javascript_animate var(--line-time) ease-in var(--javascript-delay) 1 forwards;
+}
+@keyframes javascript_animate{
+  100% {
+        width:var(--javascript-percent)
+    }
+}
+.level-line.react{
+    animation:react_animate var(--line-time) ease-in var(--react-delay) 1 forwards;
+}
+@keyframes react_animate{
+  100% {
+        width:var(--react-percent)
+    }
+}
+.level-line.redux{
+    animation:redux_animate var(--line-time) ease-in var(--redux-delay) 1 forwards;
+}
+@keyframes redux_animate{
+  100% {
+        width:var(--redux-percent)
+    }
+}
+.level-line.bootstrap{
+    animation:bootstrap_animate var(--line-time) ease-in var(--bootstrap-delay) 1 forwards;
+}
+@keyframes bootstrap_animate{
+  100% {
+        width:var(--bootstrap-percent)
+    }
+}

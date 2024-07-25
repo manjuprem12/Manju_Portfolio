@@ -1,0 +1,26 @@
+[
+    {
+        "title":"Creativity",
+        "className":"creativity",
+        "level":73
+
+    },
+    {
+        "title":"Communications",
+        "className":"communications",
+        "level":70
+
+    },
+    {
+        "title":"Problem Solving",
+        "className":"problem_solving",
+        "level":76
+
+    },
+    {
+        "title":"Team Work",
+        "className":"team_work",
+        "level":84
+
+    }
+]

@@ -1,0 +1,21 @@
+.summary-section{
+    margin:auto 2rem;
+    padding-top:2rem;
+    padding-bottom: 4rem;
+    border-bottom:1px solid var(--border-bottom-color)
+}
+.customize-button{
+    color:rgb(176, 172, 172);
+    background-color:rgba(0, 0, 0, 0.25);
+    padding:1.3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-width:300px;
+    border-radius: 5px;
+    border-color:transparent;
+    font-size:1.2rem;
+}
+.active_summary{
+    border-color:var(--pink-color);
+}
