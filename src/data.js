@@ -8,6 +8,14 @@ export const projects = [
     link: "https://mission-journey-orchestrator.vercel.app/",
   },
   {
+    title: "Movie Mate",
+    subtitle: "React 18, MovieDb, Tailwind css",
+    description:
+      "Advanced version of Movie Basic app. App shows upcoming ,popular, latest movies and shows details of it .User can also search their desired movie & get",
+    image: "./Find_Your_Coach.png",
+    link: "https://moviemate-rust.vercel.app/",
+  },
+  {
     title: "Find Your Coach",
     subtitle: "VueJS and Firebase",
     description:
