@@ -25,7 +25,7 @@ const experience_data = [
     },
     {
         "position":"Frontend Developer",
-        "company":"Therapielnd (Feb 2024-Apr 2024)",
+        "company":"Therapielnd (Feb 2024- Present)",
         "location":"Amsterdam",
         "className":"pat"
     }
