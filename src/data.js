@@ -61,6 +61,6 @@ export const skills = [
   "Material UI",
   "CSS",
   "SCSS",
+  "Jest",
   "Storybook",
-  "Jest"
 ];
