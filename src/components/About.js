@@ -36,7 +36,7 @@ const social_data = [
   },
   {
     "media": "Resume",
-    "link": "Manju_Prem.pdf"
+    "link": "Resume_Manju_Prem.pdf"
   }
 ]
 
