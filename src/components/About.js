@@ -23,7 +23,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const social_data = [
   {
     "media": "Linkedin",
-    "link": "https://www.linkedin.com/in/manju-prem-272093b7"
+    "link": "https://www.linkedin.com/in/manju-prem-p"
   },
   {
     "media": "Github",
@@ -36,7 +36,7 @@ const social_data = [
   },
   {
     "media": "Resume",
-    "link": "Resume_Manju_Prem.pdf"
+    "link": ""
   }
 ]
 
@@ -137,3 +137,4 @@ export default function About() {
     </section>
   );
 }
+
