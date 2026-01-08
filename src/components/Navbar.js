@@ -34,7 +34,7 @@ const social_data = [
   },
   {
     "media": "Resume",
-    "link": "Resume_Manju_Prem.pdf"
+    "link": ""
   }
 ]
 
@@ -49,6 +49,7 @@ export default function Navbar() {
 
     if (isMobile) {
       // Open Gmail app
+      // Resume_Manju_Prem.pdf
       window.open(mobile_link);
     } else {
       // Open Gmail website with pre-filled "to" email
@@ -124,5 +125,6 @@ export default function Navbar() {
     </div>
   );
 }
+
 
 
