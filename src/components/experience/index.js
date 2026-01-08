@@ -88,7 +88,7 @@ export default () => {
     }, [])
 
     return <div id="Experience" className='experience-section-head'>
-        <h6 className='text-center fw-light pink-color'>-- 4+ years of Experience --</h6>
+        <h6 className='text-center fw-light pink-color'>-- 5+ years of Experience --</h6>
         <h1 className='text-center mb-5'>Career</h1>
         <div className='experience-section'>
             <ul className="observe-experience d_grid_exp">
@@ -120,3 +120,4 @@ export default () => {
         </div>
     </div>
 }
+
