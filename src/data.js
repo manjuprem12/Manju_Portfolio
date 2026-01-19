@@ -70,7 +70,7 @@ export const projects = [
       "A Movie Recommender System using Unsupervised Learning CineMatch is a content-based and collaborative filtering movie recommender system that uses unsupervised learning techniques to suggest movies based on similarity in metadata such as genres and user tags. It is built using the MovieLens dataset and focuses on item-item collaborative filtering without relying on explicit user profiling or supervised learning.",
     image: "./movie-recommendation.jpg",
     link: "https://github.com/manjuprem12/movie-recommendation",
-  }
+  },
   {
     title: "Medium",
     subtitle: "MERN Stack",
