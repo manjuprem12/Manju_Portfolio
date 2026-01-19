@@ -28,7 +28,7 @@ export const projects = [
     subtitle: "creadit card fraud detection project - Mechine Learning, Pandas, Python, Sklearn, Streamlit, cloud run, Docker, Google Cloud, TensorFlow",
     description:
       "Find Your Coach: Log in to connect with expert coaches in Frontend, Backend, and Career Counseling. Send messages, get notifications, and achieve your goals.",
-    image: "./anomguard.png",
+    image: "./Medium.png",
     link: "https://anomguard.streamlit.app/",
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     subtitle: "Fare Prediction Model - Docker, GCP, Machine Learning, NumPy, Pandas, Python, Streamlit",
     description:
       "Built a regression model using location-based features to estimate taxi fares. Integrated into an app where users could input pickup/drop-off points for real-time predictions.",
-    image: "./TaxiFare.png",
+    image: "./Medium.png",
     link: "https://github.com/manjuprem12/taxifare-website",
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     subtitle: "Automated Code Review with LangChain & OpenAI",
     description:
       "Developed a command-line tool that performs intelligent code reviews using OpenAI’s language models and LangChain. The tool analyzes Python scripts and provides quality scores along with natural language feedback. Used LangChain, OpenAI API, and ChromaDB for semantic search and context retrieval. Applied vector databases, text chunking, and document loaders for efficient analysis. Built with a focus on AI-driven automation, NLP, and real-time feedback.",
-    image: "./CodeScan.png",
+    image: "./Medium.png",
     link: "https://github.com/manjuprem12/CodeScan",
   },
     {
@@ -52,7 +52,7 @@ export const projects = [
     subtitle: "Deep Learning- Keras, Python, RNN, TensorFlow",
     description:
       "This project explores a foundational deep learning task: predicting the next character in a sequence. By learning character-level language modeling, you'll gain the basic tools needed for generating synthetic text, such as absurd or Shakespearean-style sentences.",
-    image: "./text_generation.png",
+    image: "./Medium.png",
     link: "https://github.com/manjuprem12/text-generation",
   },
     {
@@ -60,7 +60,7 @@ export const projects = [
     subtitle: "Regression Model- Machine Learning, Python, Sklearn, XGBoost",
     description:
       "Built a high-performing model using Linear Regression and XGBoost to estimate house prices, leveraging strong feature engineering techniques.",
-    image: "./house-price.jpeg",
+    image: "./Medium.png",
     link: "https://github.com/manjuprem12/medium",
   },
     {
@@ -68,7 +68,7 @@ export const projects = [
     subtitle: "Unsupervised Learning - Machine Learning, Matplotlib, NumPy, Pandas, Python, Sklearn",
     description:
       "A Movie Recommender System using Unsupervised Learning CineMatch is a content-based and collaborative filtering movie recommender system that uses unsupervised learning techniques to suggest movies based on similarity in metadata such as genres and user tags. It is built using the MovieLens dataset and focuses on item-item collaborative filtering without relying on explicit user profiling or supervised learning.",
-    image: "./movie-recommendation.jpg",
+    image: "./Medium.png",
     link: "https://github.com/manjuprem12/movie-recommendation",
   },
   {
