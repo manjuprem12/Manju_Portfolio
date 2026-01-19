@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     title: "TaxiFare",
-    subtitle: "Fare Prediction Model, Docker, GCP, Machine Learning, NumPy, Pandas, Python, Streamlit",
+    subtitle: "Fare Prediction Model - Docker, GCP, Machine Learning, NumPy, Pandas, Python, Streamlit",
     description:
       "Built a regression model using location-based features to estimate taxi fares. Integrated into an app where users could input pickup/drop-off points for real-time predictions.",
     image: "./TaxiFare.png",
